@@ -1,6 +1,6 @@
 {
     "TaskName": "fingerflex",
-    "Manufacturer": "Brain Products",
+    "Manufacturer": "Neuroscan",
     "PowerLineFrequency": "n/a",
     "SamplingFrequency": 1000.0,
     "SoftwareFilters": "n/a",
@@ -14,5 +14,18 @@
     "ECGChannelCount": 0,
     "EMGChannelCount": 0,
     "MiscChannelCount": 1,
-    "TriggerChannelCount": 0
+    "TriggerChannelCount": 0,
+    "ManufacturersModelName": "Synamps2",
+    "HardwareFilters": {
+        "Bandpass": {
+            "Low cutoff (Hz)": 0.15,
+            "High cutoff (Hz)": 200,
+            "Description": "Built-in amplifier band pass 0.15 to 200 Hz, 1-pole, so no sharp corner at 200 Hz; amplitude roll-off function in ns_1k_1_300_filt.mat (fingerflex README (SDR zk881ps0522))."
+        }
+    },
+    "TaskDescription": "Cued individual finger flexion: subjects were cued with a word displayed on a bedside monitor indicating which finger to move during 2-second movement trials, performed self-paced movements (typically 2-5 per trial), each followed by a 2-second rest trial (blank screen); 30 movement cues per finger, interleaved randomly. Finger positions were recorded with a 5 degree-of-freedom dataglove (5DT, Irvine, CA); the glove signal is not included in this BIDS subset. (fingerflex README; Miller et al. 2012 PLoS Comput Biol doi:10.1371/journal.pcbi.1002655)",
+    "iEEGPlacementScheme": "Subdural ECoG electrodes; grid location per source patient table kjm_ECoGLibrary_PatientTaskTable.pdf: L Fronto-temporal-parietal",
+    "ElectrodeManufacturer": "Ad-Tech",
+    "InstitutionName": "Harborview Hospital",
+    "InstitutionAddress": "Seattle, WA, USA"
 }

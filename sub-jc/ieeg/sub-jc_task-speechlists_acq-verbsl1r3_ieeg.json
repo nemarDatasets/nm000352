@@ -1,6 +1,6 @@
 {
     "TaskName": "speechlists",
-    "Manufacturer": "Brain Products",
+    "Manufacturer": "Neuroscan",
     "PowerLineFrequency": "n/a",
     "SamplingFrequency": 1000.0,
     "SoftwareFilters": "n/a",
@@ -14,5 +14,18 @@
     "ECGChannelCount": 0,
     "EMGChannelCount": 0,
     "MiscChannelCount": 1,
-    "TriggerChannelCount": 0
+    "TriggerChannelCount": 0,
+    "ManufacturersModelName": "Synamps2",
+    "HardwareFilters": {
+        "Bandpass": {
+            "Low cutoff (Hz)": 0.15,
+            "High cutoff (Hz)": 200,
+            "Description": "Built-in amplifier band pass 0.15 to 200 Hz, 1-pole, so no sharp corner at 200 Hz; amplitude roll-off function in ns_1k_1_300_filt.mat (speech_lists README (SDR zk881ps0522))."
+        }
+    },
+    "TaskDescription": "Noun reading and verb generation for two lists of 40 nouns, each list presented 3 times for noun reading then 3 times for verb production (12 runs in the order nounsL1R1-R3, verbsL1R1-R3, nounsL2R1-R3, verbsL2R1-R3); written nouns about 1 m away, 1.6 s cues alternating with 1.6 s blank-screen intervals; meant to test working memory and cognitive load in the language system. Audio of patient speech is not included. (speech_lists README)",
+    "Instructions": "Noun runs: read the noun. Verb runs: 'produce a verb that was connected to the noun (it could be something they might do to that noun, or that the object/animal might do itself)'; repeating or changing verbs across runs was left to the patient (speech_lists README).",
+    "iEEGPlacementScheme": "Subdural ECoG electrodes; grid location per source patient table kjm_ECoGLibrary_PatientTaskTable.pdf: L Frontal",
+    "InstitutionName": "Harborview Hospital",
+    "InstitutionAddress": "Seattle, WA, USA"
 }

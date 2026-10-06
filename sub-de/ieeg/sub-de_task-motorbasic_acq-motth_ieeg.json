@@ -1,12 +1,12 @@
 {
     "TaskName": "motorbasic",
-    "Manufacturer": "Brain Products",
+    "Manufacturer": "Neuroscan",
     "PowerLineFrequency": "n/a",
     "SamplingFrequency": 1000.0,
     "SoftwareFilters": "n/a",
     "RecordingDuration": 390.399,
     "RecordingType": "continuous",
-    "iEEGReference": "n/a",
+    "iEEGReference": "Scalp reference ('Data were recorded with respect to a scalp reference.', motor_basic README (SDR zk881ps0522))",
     "ECOGChannelCount": 64,
     "SEEGChannelCount": 0,
     "EEGChannelCount": 0,
@@ -14,5 +14,18 @@
     "ECGChannelCount": 0,
     "EMGChannelCount": 0,
     "MiscChannelCount": 1,
-    "TriggerChannelCount": 0
+    "TriggerChannelCount": 0,
+    "ManufacturersModelName": "Synamps2",
+    "HardwareFilters": {
+        "Bandpass": {
+            "Low cutoff (Hz)": 0.15,
+            "High cutoff (Hz)": 200,
+            "Description": "Built-in amplifier band pass 0.15 to 200 Hz, 1-pole, so no sharp corner at 200 Hz; amplitude roll-off function in ns_1k_1_300_filt.mat (motor_basic README (SDR zk881ps0522))."
+        }
+    },
+    "TaskDescription": "Cue-based hand and tongue movement: repetitive self-paced movements (~1-2 Hz) of hand (synchronous flexion/extension of all fingers) or tongue (opening of mouth with protrusion and retraction of the tongue), contralateral to the grid, in 2 s or 3 s cue blocks alternating with rest blocks of the same length (blank screen); 30-75 cues per modality; visual cues presented with BCI2000 as a written word in a 10 x 10 cm window at 75-100 cm. (motor_basic README; Miller et al. 2007 J Neurosci doi:10.1523/JNEUROSCI.3886-06.2007)",
+    "Instructions": "Perform repetitive, self-paced movement of the cued body part during the cue, alternating with rest when the cue is absent (motor_basic README).",
+    "iEEGPlacementScheme": "Subdural ECoG electrodes; grid location per source patient table kjm_ECoGLibrary_PatientTaskTable.pdf: R Temporal-Parietal",
+    "InstitutionName": "Harborview Hospital",
+    "InstitutionAddress": "Seattle, WA, USA"
 }

@@ -11,9 +11,52 @@
         "Description": "The event onset time in number of sampling points.First sample is 0."
     },
     "value": {
-        "Description": "The event code (also known as trigger code or event ID) associated with the event."
+        "Description": "Integer event ID assigned per file by the BIDS writer (MNE-BIDS) to each distinct trial_type; it is not the source stim code (see trial_type) and may differ between files."
     },
     "trial_type": {
-        "Description": "The type, category, or name of the event."
+        "Description": "Source stim code as 'stimcode-<N>', N = value of the source 'stim' vector (speech_lists.zip:speech_lists/data/wc/wc_nouns_L2_R1.mat). Each event spans one constant segment of the stim vector (onset at the sample where the code changes; duration until the next change). The full vector is kept verbatim in the STIMCODE channel.",
+        "Levels": {
+            "stimcode-0": "Blank-screen inter-stimulus interval (1.6 s) (speech_lists README (SDR zk881ps0522))",
+            "stimcode-1": "Cue: noun 1 of LIST 2, 'SOAP' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-2": "Cue: noun 2 of LIST 2, 'GUN' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-3": "Cue: noun 3 of LIST 2, 'JOB' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-4": "Cue: noun 4 of LIST 2, 'SCHOOL' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-5": "Cue: noun 5 of LIST 2, 'CRAYON' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-6": "Cue: noun 6 of LIST 2, 'BOAT' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-7": "Cue: noun 7 of LIST 2, 'FOOT' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-8": "Cue: noun 8 of LIST 2, 'PURSE' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-9": "Cue: noun 9 of LIST 2, 'LENS' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-10": "Cue: noun 10 of LIST 2, 'BEER' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-11": "Cue: noun 11 of LIST 2, 'PLANE' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-12": "Cue: noun 12 of LIST 2, 'BLANKET' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-13": "Cue: noun 13 of LIST 2, 'BEE' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-14": "Cue: noun 14 of LIST 2, 'DOG' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-15": "Cue: noun 15 of LIST 2, 'LETTER' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-16": "Cue: noun 16 of LIST 2, 'SCALE' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-17": "Cue: noun 17 of LIST 2, 'FIST' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-18": "Cue: noun 18 of LIST 2, 'BED' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-19": "Cue: noun 19 of LIST 2, 'FOOD' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-20": "Cue: noun 20 of LIST 2, 'MATCH' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-21": "Cue: noun 21 of LIST 2, 'PILL' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-22": "Cue: noun 22 of LIST 2, 'HOSE' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-23": "Cue: noun 23 of LIST 2, 'CHAIR' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-24": "Cue: noun 24 of LIST 2, 'TOY' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-25": "Cue: noun 25 of LIST 2, 'TREE' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-26": "Cue: noun 26 of LIST 2, 'NEEDLE' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-27": "Cue: noun 27 of LIST 2, 'OVEN' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-28": "Cue: noun 28 of LIST 2, 'MONEY' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-29": "Cue: noun 29 of LIST 2, 'PHONE' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-30": "Cue: noun 30 of LIST 2, 'PAPER' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-31": "Cue: noun 31 of LIST 2, 'KEY' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-32": "Cue: noun 32 of LIST 2, 'BROOM' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-33": "Cue: noun 33 of LIST 2, 'ICE' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-34": "Cue: noun 34 of LIST 2, 'BRICK' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-35": "Cue: noun 35 of LIST 2, 'HORN' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-36": "Cue: noun 36 of LIST 2, 'FIRE' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-37": "Cue: noun 37 of LIST 2, 'POOL' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-38": "Cue: noun 38 of LIST 2, 'BASKET' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-39": "Cue: noun 39 of LIST 2, 'RAZOR' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')",
+            "stimcode-40": "Cue: noun 40 of LIST 2, 'GLOVE' (task: read the noun aloud) (speech_lists README (SDR zk881ps0522): 'The values 1-40 correspond to the 40 words in each list')"
+        }
     }
 }

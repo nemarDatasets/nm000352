@@ -1,6 +1,6 @@
 {
     "TaskName": "gestures",
-    "Manufacturer": "Brain Products",
+    "Manufacturer": "Neuroscan",
     "PowerLineFrequency": "n/a",
     "SamplingFrequency": 1000.0,
     "SoftwareFilters": "n/a",
@@ -14,5 +14,17 @@
     "ECGChannelCount": 0,
     "EMGChannelCount": 0,
     "MiscChannelCount": 1,
-    "TriggerChannelCount": 0
+    "TriggerChannelCount": 0,
+    "ManufacturersModelName": "Synamps2",
+    "HardwareFilters": {
+        "Bandpass": {
+            "Low cutoff (Hz)": 0.15,
+            "High cutoff (Hz)": 200,
+            "Description": "Built-in amplifier band pass 0.15 to 200 Hz, 1-pole, so no sharp corner at 200 Hz; amplitude roll-off function in ns_1k_1_300_filt.mat (gestures README (SDR zk881ps0522))."
+        }
+    },
+    "TaskDescription": "Finger flexion: cued individual finger movements in 2 s trials (codes 1-5 thumb..little finger). Series of cued motor tasks of varying complexity ('gestures'), meant to test interactions between primary motor cortex and other motor areas; cues were words on a bedside monitor; finger flexions of the hand contralateral to the grid were recorded with a 5DT dataglove (not included in this BIDS subset). Not yet published per the source README. (gestures README)",
+    "iEEGPlacementScheme": "Subdural ECoG electrodes; grid location per source patient table kjm_ECoGLibrary_PatientTaskTable.pdf: R Frontotemporal",
+    "InstitutionName": "Harborview Hospital",
+    "InstitutionAddress": "Seattle, WA, USA"
 }

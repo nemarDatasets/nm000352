@@ -11,9 +11,14 @@
         "Description": "The event onset time in number of sampling points.First sample is 0."
     },
     "value": {
-        "Description": "The event code (also known as trigger code or event ID) associated with the event."
+        "Description": "Integer event ID assigned per file by the BIDS writer (MNE-BIDS) to each distinct trial_type; it is not the source stim code (see trial_type) and may differ between files."
     },
     "trial_type": {
-        "Description": "The type, category, or name of the event."
+        "Description": "Source stim code as 'stimcode-<N>', N = value of the source 'stim' vector (imagery_basic.zip:imagery_basic/data/jc_mot_t_h.mat). Each event spans one constant segment of the stim vector (onset at the sample where the code changes; duration until the next change). The full vector is kept verbatim in the STIMCODE channel.",
+        "Levels": {
+            "stimcode-0": "Blank screen (rest) (imagery_basic README (SDR zk881ps0522))",
+            "stimcode-11": "Cue: tongue movement (imagery_basic README (SDR zk881ps0522): '11: tongue movement or imagery, 12: hand movement or imagery')",
+            "stimcode-12": "Cue: hand movement (imagery_basic README (SDR zk881ps0522): '11: tongue movement or imagery, 12: hand movement or imagery')"
+        }
     }
 }

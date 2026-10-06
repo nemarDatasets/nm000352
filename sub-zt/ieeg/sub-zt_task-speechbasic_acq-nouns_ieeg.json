@@ -1,6 +1,6 @@
 {
     "TaskName": "speechbasic",
-    "Manufacturer": "Brain Products",
+    "Manufacturer": "Neuroscan",
     "PowerLineFrequency": "n/a",
     "SamplingFrequency": 1000.0,
     "SoftwareFilters": "n/a",
@@ -14,5 +14,18 @@
     "ECGChannelCount": 0,
     "EMGChannelCount": 0,
     "MiscChannelCount": 0,
-    "TriggerChannelCount": 0
+    "TriggerChannelCount": 0,
+    "ManufacturersModelName": "Synamps2",
+    "HardwareFilters": {
+        "Bandpass": {
+            "Low cutoff (Hz)": 0.15,
+            "High cutoff (Hz)": 200,
+            "Description": "Built-in amplifier band pass 0.15 to 200 Hz, 1-pole, so no sharp corner at 200 Hz; amplitude roll-off function in ns_1k_1_300_filt.mat (speech_basic README (SDR zk881ps0522))."
+        }
+    },
+    "TaskDescription": "Verb generation (acq-verbs): written nouns (about 2.5 cm high, 8-12 cm wide) shown on a screen about 1 m away; the patient speaks a verb connected to the noun; 1.6 s cues alternate with a 1.6 s blank-screen interstimulus interval. Noun reading control task (acq-nouns): the patient reads each noun aloud. Audio of patient speech is not included. (speech_basic README; Miller et al. 2011 J Neurosurg Pediatr doi:10.3171/2011.2.PEDS1156)",
+    "Instructions": "Verb generation: speak a verb that was connected to the noun (e.g. cue 'ball' -> 'kick', 'bee' -> 'fly'); control task: read each noun as it appears (speech_basic README).",
+    "iEEGPlacementScheme": "Subdural ECoG electrodes; grid location per source patient table kjm_ECoGLibrary_PatientTaskTable.pdf: L Fronto-temporal-parietal",
+    "InstitutionName": "Harborview Hospital",
+    "InstitutionAddress": "Seattle, WA, USA"
 }
