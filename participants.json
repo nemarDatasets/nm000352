@@ -7,11 +7,10 @@
         "Units": "years"
     },
     "sex": {
-        "Description": "Sex of the participant",
+        "Description": "Sex of the participant, transcribed from the 'Sex' column of the source patient table kjm_ECoGLibrary_PatientTaskTable.pdf (Stanford Digital Repository zk881ps0522; MD5 a320c5dbfc826fd390317e45426fef27), keyed by the source two-letter patient code. Every non-n/a value agrees with the per-task source README tables that list the same patient (fingerflex, gestures, fixation_PAC, fixation_pwrlaw, joystick_track, mouse_track). n/a where the source table leaves the cell blank (HH, IN, JF, JT, RR, WW).",
         "Levels": {
             "F": "female",
-            "M": "male",
-            "O": "other"
+            "M": "male"
         }
     },
     "hand": {
