@@ -1,11 +1,42 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "IEEG004: A library of human electrocorticographic data and analyses (Kai J. Miller) - calibrated task subset",
+  "description": "A calibrated task subset of Kai J. Miller's library of human electrocorticographic (ECoG) data, comprising 111 recordings from 24 epilepsy patients with subdural electrode grids. Tasks include finger flexion, hand gestures, motor movement and imagery, verb generation, and noun reading. Data were recorded at 1 kHz on Synamps2 amplifiers and converted to BIDS (BrainVision format) with events and electrode positions.",
+  "methods_description": "Subdural ECoG was recorded at Harborview Hospital in Seattle with Synamps2 amplifiers at 1000 Hz, using a hardware band pass of 0.15-200 Hz and BCI2000 acquisition software. Source MATLAB task files were converted to BrainVision with MNE-BIDS and scaled to volts with the documented factor of 0.0298 µV per amplifier unit. No filtering, resampling, or re-referencing was applied. Stimulus codes were exported as events and as a STIMCODE channel.",
+  "license": "CC-BY-SA-4.0",
   "authors": {
     "Kai J. Miller": {
       "orcid": "0000-0002-6687-6422"
     }
   },
+  "keywords": [
+    {
+      "term": "Electrocorticography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
+    },
+    {
+      "term": "ECoG"
+    },
+    {
+      "term": "iEEG"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "finger flexion"
+    },
+    {
+      "term": "language"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1038/s41562-019-0678-3",
@@ -21,14 +52,32 @@
       "identifier": "https://nemar.org/dataset/nm000352",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1523/JNEUROSCI.3886-06.2007",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1073/pnas.0913697107",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1371/journal.pcbi.1002655",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.3171/2011.2.PEDS1156",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
-  "title": "IEEG004: A library of human electrocorticographic data and analyses (Kai J. Miller) - calibrated task subset",
-  "license": "CC-BY-SA-4.0",
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
     "6.51 GB (222 files)"
   ],
@@ -37,31 +86,26 @@
     ".json",
     ".tsv",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "A calibrated task subset of a library of human electrocorticographic (ECoG) recordings collected from patients who volunteered with informed consent. The subset covers finger flexion, gestures, basic imagery, basic motor, basic speech, and speech list tasks, converted to BIDS with amplifier units scaled to volts. Electrode coordinates, where available, are provided in Talairach space.",
-  "methods_description": "Raw amplifier values were scaled to volts using the source-documented factor of 0.0298 microvolts per unit. Channel names are synthetic source-order indices. The stimulus code channel preserves the source stim vector, and events use raw numeric stim codes. Electrode coordinates are Talairach via the LOC package, with units assumed to be mm.",
-  "keywords": [
+  "funding_references": [
     {
-      "term": "Electrocorticography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
+      "funder_name": "Van Wagenen Foundation (financial support of the author)"
     },
     {
-      "term": "ECoG"
+      "funder_name": "National Science Foundation",
+      "award_number": "BCS-0642848"
     },
     {
-      "term": "iEEG"
+      "funder_name": "National Institutes of Health",
+      "award_number": "RO1NS065186"
     },
     {
-      "term": "motor imagery"
-    },
-    {
-      "term": "finger movement"
-    },
-    {
-      "term": "speech"
+      "funder_name": "Van Wagenen Foundation"
     }
   ],
-  "source_hash": "ce5610feebba979895942b6dc21b59f0ddf96c96da308d4bcfcc1775f07b45d9"
+  "dataset_type": "raw",
+  "resource_type_general": "Dataset",
+  "source_hash": "adc7d584463ca84bde493829d03dd6ef5af5c58290ca85614f96358b02a1a8fc"
 }
