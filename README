@@ -49,7 +49,8 @@ Each *_ieeg.json carries the task description (`TaskDescription`), and `Instruct
 ## Files
 - `*_ieeg.vhdr/.vmrk/.eeg`: BrainVision recordings; ECoG channels `ecogNNN` plus, where the source file has a stim vector, a
   `STIMCODE` channel (type MISC) with that vector verbatim.
-- `*_channels.tsv`: channel list (see Known caveats for the cutoff columns).
+- `*_channels.tsv`: channel list; `low_cutoff` 0.15 / `high_cutoff` 200.0 Hz on the ECoG channels = the built-in 1-pole
+  amplifier band pass stated in every task README (no sharp corner at 200 Hz; roll-off in `ns_1k_1_300_filt.mat`).
 - `*_events.tsv` / `*_events.json`: one event per constant segment of the source stim vector; `trial_type` = `stimcode-<N>`,
   with the meaning of each code in `trial_type.Levels` of the events.json, taken from the task README and, for gestures, from the
   `stimtext` cue-text variable of the source file. Codes the README does not define are labelled as such (fingerflex -1/-2,
@@ -71,8 +72,6 @@ Each *_ieeg.json carries the task description (`TaskDescription`), and `Instruct
 
 ## Known caveats
 - See "Conversion notes" below (kept verbatim): synthetic channel names, numeric stim codes, coordinate units assumed (mm).
-- `low_cutoff` 0.0 / `high_cutoff` 500.0 in `*_channels.tsv` are writer defaults (no filter information was passed at
-  conversion); the source documents a 0.15-200 Hz 1-pole hardware band pass (see `HardwareFilters` in *_ieeg.json).
 - `PowerLineFrequency` is n/a: the reviewed source documents do not state it.
 - Some README code tables do not match the files: gestures `rh_lh` files use codes 5/6/7 (stimtext right/left/both) where
   the README lists 1/2/3; the gestures baseline README says `stim` is all zeros, but the files contain code 1 segments.
