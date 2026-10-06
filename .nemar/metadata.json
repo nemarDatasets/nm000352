@@ -1,0 +1,67 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Kai J. Miller": {
+      "orcid": "0000-0002-6687-6422"
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1038/s41562-019-0678-3",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000352",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000352",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "title": "IEEG004: A library of human electrocorticographic data and analyses (Kai J. Miller) - calibrated task subset",
+  "license": "CC-BY-SA-4.0",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "6.51 GB (222 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "A calibrated task subset of a library of human electrocorticographic (ECoG) recordings collected from patients who volunteered with informed consent. The subset covers finger flexion, gestures, basic imagery, basic motor, basic speech, and speech list tasks, converted to BIDS with amplifier units scaled to volts. Electrode coordinates, where available, are provided in Talairach space.",
+  "methods_description": "Raw amplifier values were scaled to volts using the source-documented factor of 0.0298 microvolts per unit. Channel names are synthetic source-order indices. The stimulus code channel preserves the source stim vector, and events use raw numeric stim codes. Electrode coordinates are Talairach via the LOC package, with units assumed to be mm.",
+  "keywords": [
+    {
+      "term": "Electrocorticography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
+    },
+    {
+      "term": "ECoG"
+    },
+    {
+      "term": "iEEG"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "finger movement"
+    },
+    {
+      "term": "speech"
+    }
+  ],
+  "source_hash": "ce5610feebba979895942b6dc21b59f0ddf96c96da308d4bcfcc1775f07b45d9"
+}
