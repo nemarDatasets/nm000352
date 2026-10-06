@@ -1,0 +1,5 @@
+{
+ "iEEGCoordinateSystem": "Other",
+ "iEEGCoordinateSystemDescription": "No electrode-location file was found in the source archives for this patient code; positions are explicitly unknown (n/a), not fabricated.",
+ "iEEGCoordinateUnits": "n/a"
+}

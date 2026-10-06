@@ -1,0 +1,18 @@
+{
+ "Name": "IEEG004: A library of human electrocorticographic data and analyses (Kai J. Miller) - calibrated task subset",
+ "BIDSVersion": "1.9.0",
+ "License": "CC-BY-SA-4.0",
+ "Authors": [
+  "Kai J. Miller"
+ ],
+ "HowToAcknowledge": "All patients participated voluntarily after informed written consent, under University of Washington IRB protocol #12193. Data were anonymized per IRB/HIPAA. Cite: Miller KJ, \"A library of human electrocorticographic data and analyses\", and the Stanford Digital Repository https://purl.stanford.edu/zk881ps0522",
+ "ReferencesAndLinks": [
+  "https://doi.org/10.1038/s41562-019-0678-3",
+  "https://purl.stanford.edu/zk881ps0522"
+ ],
+ "SourceDatasets": [
+  {
+   "URL": "https://purl.stanford.edu/zk881ps0522"
+  }
+ ]
+}

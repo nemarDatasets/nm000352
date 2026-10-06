@@ -1,0 +1,4 @@
+onset	duration	trial_type	value	sample
+0.0	4.08	stimcode-0	1	0
+4.08	121.0	stimcode-1	2	4080
+125.08	4.96	stimcode-0	1	125080

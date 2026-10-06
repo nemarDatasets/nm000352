@@ -1,0 +1,5 @@
+{
+ "iEEGCoordinateSystem": "Other",
+ "iEEGCoordinateSystemDescription": "Talairach coordinates obtained via the source-documented LOC package; coordinate length unit is not explicitly stated in reviewed source documentation and mm is assumed only by Talairach convention, not confirmed.",
+ "iEEGCoordinateUnits": "mm"
+}

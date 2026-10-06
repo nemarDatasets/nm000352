@@ -1,0 +1,20 @@
+IEEG004 calibrated-task subset (fingerflex, gestures, imagerybasic, motorbasic, speechbasic, speechlists)
+
+Ethics statement (verbatim, required by source license):
+All patients participated in a purely voluntary manner, after providing informed written consent,
+under experimental protocols approved by the Institutional Review Board of the University of
+Washington (#12193). All patient data was anonymized according to IRB protocol, in accordance with
+HIPAA mandate. It was made available through the library described in "A Library of Human
+Electrocorticographic Data and Analyses" by Kai Miller, freely available at
+https://searchworks.stanford.edu/view/zk881ps0522 .
+
+Conversion notes: data were scaled from stored amplifier units to volts using the source-documented
+factor 1 amplifier unit = 0.0298 microvolts (2.98e-8 V/unit), applied once. Channel names ecogNNN are
+SYNTHETIC source-order indices, not acquisition electrode labels (none were supplied). The STIMCODE
+channel preserves the source stim vector verbatim; events.tsv trial_type values are the raw numeric
+stim codes (stimcode-<N>); see each archive's original README (preserved in
+research/ieeg004-conversion/<task>-readme.txt on the lab copy) for the source-defined code meanings.
+Electrode coordinates, where present, are Talairach via the LOC package; coordinate units are an
+assumption (mm), not confirmed by source documentation (see coordsystem.json).
+The BCI Competition IV dataset 4 archive and the mouse/joystick/visual_search/fixation tasks without a
+documented physical-unit calibration are intentionally excluded from this subset.

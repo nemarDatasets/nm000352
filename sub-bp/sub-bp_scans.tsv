@@ -1,0 +1,11 @@
+filename	acq_time
+ieeg/sub-bp_task-fingerflex_ieeg.vhdr	n/a
+ieeg/sub-bp_task-gestures_acq-base_ieeg.vhdr	n/a
+ieeg/sub-bp_task-gestures_acq-fingerflex_ieeg.vhdr	n/a
+ieeg/sub-bp_task-gestures_acq-freeform_ieeg.vhdr	n/a
+ieeg/sub-bp_task-gestures_acq-pinch_ieeg.vhdr	n/a
+ieeg/sub-bp_task-gestures_acq-rhlh_ieeg.vhdr	n/a
+ieeg/sub-bp_task-imagerybasic_acq-imth_ieeg.vhdr	n/a
+ieeg/sub-bp_task-imagerybasic_acq-motth_ieeg.vhdr	n/a
+ieeg/sub-bp_task-motorbasic_acq-motth_ieeg.vhdr	n/a
+ieeg/sub-bp_task-speechbasic_acq-verbs_ieeg.vhdr	n/a

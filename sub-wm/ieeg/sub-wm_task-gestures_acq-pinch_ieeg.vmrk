@@ -1,0 +1,74 @@
+Brain Vision Data Exchange Marker File, Version 1.0
+; Exported using pybv 0.8.1
+
+[Common Infos]
+Codepage=UTF-8
+DataFile=sub-wm_task-gestures_acq-pinch_ieeg.eeg
+
+[Marker Infos]
+; Each entry: Mk<Marker number>=<Type>,<Description>,<Position in data points>,
+;             <Size in data points>, <Channel number (0 = marker is related to all channels)>
+;             <Date (YYYYMMDDhhmmssuuuuuu)>
+; Fields are delimited by commas, some fields might be omitted (empty).
+; Commas in type or description text are coded as "\1".
+Mk1=Stimulus,S  1,1,1,0
+Mk2=Stimulus,S  2,7081,1,0
+Mk3=Stimulus,S  1,9081,1,0
+Mk4=Stimulus,S  2,11081,1,0
+Mk5=Stimulus,S  1,13081,1,0
+Mk6=Stimulus,S  2,15081,1,0
+Mk7=Stimulus,S  1,17081,1,0
+Mk8=Stimulus,S  2,19081,1,0
+Mk9=Stimulus,S  1,21081,1,0
+Mk10=Stimulus,S  2,23081,1,0
+Mk11=Stimulus,S  1,25081,1,0
+Mk12=Stimulus,S  2,27081,1,0
+Mk13=Stimulus,S  1,29081,1,0
+Mk14=Stimulus,S  2,31081,1,0
+Mk15=Stimulus,S  1,33081,1,0
+Mk16=Stimulus,S  2,35081,1,0
+Mk17=Stimulus,S  1,37081,1,0
+Mk18=Stimulus,S  2,39081,1,0
+Mk19=Stimulus,S  1,41081,1,0
+Mk20=Stimulus,S  2,43081,1,0
+Mk21=Stimulus,S  1,45081,1,0
+Mk22=Stimulus,S  2,47081,1,0
+Mk23=Stimulus,S  1,49081,1,0
+Mk24=Stimulus,S  2,51081,1,0
+Mk25=Stimulus,S  1,53081,1,0
+Mk26=Stimulus,S  2,55081,1,0
+Mk27=Stimulus,S  1,57081,1,0
+Mk28=Stimulus,S  2,59081,1,0
+Mk29=Stimulus,S  1,61081,1,0
+Mk30=Stimulus,S  2,63081,1,0
+Mk31=Stimulus,S  1,65081,1,0
+Mk32=Stimulus,S  2,67081,1,0
+Mk33=Stimulus,S  1,69081,1,0
+Mk34=Stimulus,S  2,71081,1,0
+Mk35=Stimulus,S  1,73081,1,0
+Mk36=Stimulus,S  2,75081,1,0
+Mk37=Stimulus,S  1,77081,1,0
+Mk38=Stimulus,S  2,79081,1,0
+Mk39=Stimulus,S  1,81081,1,0
+Mk40=Stimulus,S  2,83081,1,0
+Mk41=Stimulus,S  1,85081,1,0
+Mk42=Stimulus,S  2,87081,1,0
+Mk43=Stimulus,S  1,89081,1,0
+Mk44=Stimulus,S  2,91081,1,0
+Mk45=Stimulus,S  1,93081,1,0
+Mk46=Stimulus,S  2,95081,1,0
+Mk47=Stimulus,S  1,97081,1,0
+Mk48=Stimulus,S  2,99081,1,0
+Mk49=Stimulus,S  1,101081,1,0
+Mk50=Stimulus,S  2,103081,1,0
+Mk51=Stimulus,S  1,105081,1,0
+Mk52=Stimulus,S  2,107081,1,0
+Mk53=Stimulus,S  1,109081,1,0
+Mk54=Stimulus,S  2,111081,1,0
+Mk55=Stimulus,S  1,113081,1,0
+Mk56=Stimulus,S  2,115081,1,0
+Mk57=Stimulus,S  1,117081,1,0
+Mk58=Stimulus,S  2,119081,1,0
+Mk59=Stimulus,S  1,121081,1,0
+Mk60=Stimulus,S  2,123081,1,0
+Mk61=Stimulus,S  1,125081,1,0
