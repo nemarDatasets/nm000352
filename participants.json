@@ -3,8 +3,8 @@
         "Description": "Unique participant identifier"
     },
     "age": {
-        "Description": "Age of the participant at time of testing",
-        "Units": "years"
+        "Description": "Age in years, transcribed from the 'Age' column of the source patient table kjm_ECoGLibrary_PatientTaskTable.pdf (Stanford Digital Repository zk881ps0522; MD5 a320c5dbfc826fd390317e45426fef27), keyed by the source two-letter patient code. The source gives one age per patient code and does not say at which recording or task it was taken. Every non-n/a value agrees with the per-task source README tables that list the same patient (fingerflex, gestures, fixation_PAC, fixation_pwrlaw, joystick_track, mouse_track). n/a where the source table leaves the cell blank (HH, IN, JF, JT, RR, WW).",
+        "Units": "year"
     },
     "sex": {
         "Description": "Sex of the participant, transcribed from the 'Sex' column of the source patient table kjm_ECoGLibrary_PatientTaskTable.pdf (Stanford Digital Repository zk881ps0522; MD5 a320c5dbfc826fd390317e45426fef27), keyed by the source two-letter patient code. Every non-n/a value agrees with the per-task source README tables that list the same patient (fingerflex, gestures, fixation_PAC, fixation_pwrlaw, joystick_track, mouse_track). n/a where the source table leaves the cell blank (HH, IN, JF, JT, RR, WW).",
@@ -13,20 +13,11 @@
             "M": "male"
         }
     },
-    "hand": {
-        "Description": "Handedness of the participant",
+    "handedness": {
+        "Description": "Handedness, transcribed from the 'Handedness' column of the source patient table kjm_ECoGLibrary_PatientTaskTable.pdf (Stanford Digital Repository zk881ps0522; MD5 a320c5dbfc826fd390317e45426fef27), keyed by the source two-letter patient code. Every non-n/a value agrees with the per-task source README tables that list the same patient (fingerflex, gestures, fixation_PAC, fixation_pwrlaw, joystick_track, mouse_track). n/a where the source table leaves the cell blank (HH, IN, JF, JT, RR, WW).",
         "Levels": {
             "R": "right",
-            "L": "left",
-            "A": "ambidextrous"
+            "L": "left"
         }
-    },
-    "weight": {
-        "Description": "Body weight of the participant",
-        "Units": "kg"
-    },
-    "height": {
-        "Description": "Body height of the participant",
-        "Units": "m"
     }
 }
