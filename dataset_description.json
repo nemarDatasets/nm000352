@@ -1,55 +1,57 @@
 {
- "Name": "IEEG004: A library of human electrocorticographic data and analyses (Kai J. Miller) - calibrated task subset",
- "BIDSVersion": "1.9.0",
- "License": "CC-BY-SA-4.0",
- "Authors": [
-  "Kai J. Miller"
- ],
- "HowToAcknowledge": "All patients participated voluntarily after informed written consent, under University of Washington IRB protocol #12193. Data were anonymized per IRB/HIPAA. Cite: Miller KJ, \"A library of human electrocorticographic data and analyses\", and the Stanford Digital Repository https://purl.stanford.edu/zk881ps0522",
- "ReferencesAndLinks": [
-  "https://doi.org/10.1038/s41562-019-0678-3",
-  "https://purl.stanford.edu/zk881ps0522",
-  "https://doi.org/10.1523/JNEUROSCI.3886-06.2007",
-  "https://doi.org/10.1073/pnas.0913697107",
-  "https://doi.org/10.1371/journal.pcbi.1002655",
-  "https://doi.org/10.3171/2011.2.PEDS1156",
-  "https://www.bbci.de/competition/iv/desc_4.pdf",
-  "https://searchworks.stanford.edu/view/zk881ps0522"
- ],
- "SourceDatasets": [
-  {
-   "URL": "https://purl.stanford.edu/zk881ps0522",
-   "Version": "SDR deposit 2019-02-05"
-  }
- ],
- "DatasetType": "raw",
- "Acknowledgements": "From the library publication (Miller KJ (2019) A library of human electrocorticographic data and analyses. Nat Hum Behav 3:1225-1235, doi:10.1038/s41562-019-0678-3, Acknowledgements): the author thanks J. Ojemann, M. den Nijs, R. Rao and G. Schalk for mentorship during the development of the library; D. Hermes, R. Eisinger and B. Wandell for discussions about open data and critical readings of the manuscript; and the patients at Harborview Hospital in Seattle for their participation. Task data subsets were first described in the publications listed in ReferencesAndLinks (per the task READMEs).",
- "Funding": [
-  "National Science Foundation BCS-0642848 (data collection)",
-  "National Institutes of Health RO1NS065186 (data collection)",
-  "Van Wagenen Foundation (financial support of the author)"
- ],
- "EthicsApprovals": [
-  "All patients participated in a purely voluntary manner, after providing informed written consent, under experimental protocols approved by the Institutional Review Board of the University of Washington (#12193). All patient data was anonymized according to IRB protocol, in accordance with HIPAA mandate. (Ethics statement that the task READMEs of Stanford Digital Repository https://purl.stanford.edu/zk881ps0522 require verbatim in any publication using the data; wording as in the motor_basic, fingerflex, gestures, speech_basic and speech_lists READMEs.)"
- ],
- "Keywords": [
-  "electrocorticography",
-  "human",
-  "ECoG",
-  "iEEG",
-  "epilepsy",
-  "motor movement",
-  "motor imagery",
-  "finger flexion",
-  "hand gestures",
-  "verb generation",
-  "noun reading",
-  "language"
- ],
- "GeneratedBy": [
-  {
-   "Name": "laneC_convert.py (ieeg-nemar-20261005 harness)",
-   "Description": "MATLAB task files from the SDR zk881ps0522 archives written as BrainVision with MNE-BIDS; data scaled once by the source-documented factor 1 amplifier unit = 0.0298 microvolts; stim vector kept as STIMCODE channel; no filtering, resampling or re-referencing."
-  }
- ]
+  "Name": "IEEG004: A library of human electrocorticographic data and analyses (Kai J. Miller) - calibrated task subset",
+  "BIDSVersion": "1.9.0",
+  "License": "CC-BY-SA-4.0",
+  "Authors": [
+    "Kai J. Miller"
+  ],
+  "HowToAcknowledge": "All patients participated voluntarily after informed written consent, under University of Washington IRB protocol #12193. Data were anonymized per IRB/HIPAA. Cite: Miller KJ, \"A library of human electrocorticographic data and analyses\", and the Stanford Digital Repository https://purl.stanford.edu/zk881ps0522",
+  "ReferencesAndLinks": [
+    "https://doi.org/10.1038/s41562-019-0678-3",
+    "https://purl.stanford.edu/zk881ps0522",
+    "https://doi.org/10.1523/JNEUROSCI.3886-06.2007",
+    "https://doi.org/10.1073/pnas.0913697107",
+    "https://doi.org/10.1371/journal.pcbi.1002655",
+    "https://doi.org/10.3171/2011.2.PEDS1156",
+    "https://www.bbci.de/competition/iv/desc_4.pdf",
+    "https://searchworks.stanford.edu/view/zk881ps0522"
+  ],
+  "SourceDatasets": [
+    {
+      "URL": "https://purl.stanford.edu/zk881ps0522",
+      "Version": "SDR deposit 2019-02-05"
+    }
+  ],
+  "DatasetType": "raw",
+  "Acknowledgements": "From the library publication (Miller KJ (2019) A library of human electrocorticographic data and analyses. Nat Hum Behav 3:1225-1235, doi:10.1038/s41562-019-0678-3, Acknowledgements): the author thanks J. Ojemann, M. den Nijs, R. Rao and G. Schalk for mentorship during the development of the library; D. Hermes, R. Eisinger and B. Wandell for discussions about open data and critical readings of the manuscript; and the patients at Harborview Hospital in Seattle for their participation. Task data subsets were first described in the publications listed in ReferencesAndLinks (per the task READMEs).",
+  "Funding": [
+    "National Science Foundation BCS-0642848 (data collection)",
+    "National Institutes of Health RO1NS065186 (data collection)",
+    "Van Wagenen Foundation (financial support of the author)"
+  ],
+  "EthicsApprovals": [
+    "All patients participated in a purely voluntary manner, after providing informed written consent, under experimental protocols approved by the Institutional Review Board of the University of Washington (#12193). All patient data was anonymized according to IRB protocol, in accordance with HIPAA mandate. (Ethics statement that the task READMEs of Stanford Digital Repository https://purl.stanford.edu/zk881ps0522 require verbatim in any publication using the data; wording as in the motor_basic, fingerflex, gestures, speech_basic and speech_lists READMEs.)"
+  ],
+  "Keywords": [
+    "electrocorticography",
+    "human",
+    "ECoG",
+    "iEEG",
+    "epilepsy",
+    "motor movement",
+    "motor imagery",
+    "finger flexion",
+    "hand gestures",
+    "verb generation",
+    "noun reading",
+    "language"
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "laneC_convert.py (ieeg-nemar-20261005 harness)",
+      "Description": "MATLAB task files from the SDR zk881ps0522 archives written as BrainVision with MNE-BIDS; data scaled once by the source-documented factor 1 amplifier unit = 0.0298 microvolts; stim vector kept as STIMCODE channel; no filtering, resampling or re-referencing."
+    }
+  ],
+  "DatasetDOI": "10.82901/nemar.nm000352",
+  "Version": "1.0.0"
 }
