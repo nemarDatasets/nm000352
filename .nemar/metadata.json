@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "IEEG004: A library of human electrocorticographic data and analyses (Kai J. Miller) - calibrated task subset",
-  "description": "A calibrated task subset of Kai J. Miller's library of human electrocorticographic (ECoG) data, comprising 111 recordings from 24 epilepsy patients with subdural electrode grids. Tasks include finger flexion, hand gestures, motor movement and imagery, and verb generation and noun reading. Data are provided in BrainVision format with BIDS metadata, scaled to physical units using the source-documented amplifier calibration.",
-  "methods_description": "ECoG was recorded at Harborview Hospital in Seattle using Synamps2 amplifiers (Neuroscan) and BCI2000 software at 1000 Hz, with a built-in 0.15-200 Hz amplifier band pass. Platinum subdural grid and strip electrodes were used. Stimulus codes were retained as a STIMCODE channel and converted to BIDS events, and data were scaled to volts without filtering, resampling or re-referencing.",
+  "description": "A calibrated task subset of Kai J. Miller's library of human electrocorticographic (ECoG) data, comprising 111 recordings from 24 epilepsy patients with subdural electrode grids. Tasks include finger flexion, hand gestures, motor movement and imagery, and verb generation and noun reading. Data were recorded at 1 kHz and converted to BIDS in BrainVision format with source-documented amplitude calibration.",
+  "methods_description": "Subdural ECoG was recorded at Harborview Hospital in Seattle using Synamps2 amplifiers with BCI2000 software at 1000 Hz and a built-in 0.15-200 Hz band pass. Task stimulus codes were retained as a STIMCODE channel, and MATLAB task files were converted to BrainVision with MNE-BIDS.",
   "license": "CC-BY-SA-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -16,9 +16,6 @@
       "term": "Electrocorticography",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
-    },
-    {
-      "term": "ECoG"
     },
     {
       "term": "iEEG"
@@ -35,7 +32,10 @@
       "term": "finger flexion"
     },
     {
-      "term": "speech and language tasks"
+      "term": "hand gestures"
+    },
+    {
+      "term": "language mapping"
     }
   ],
   "related_identifiers": [
@@ -148,5 +148,5 @@
     ".xml",
     ".yml"
   ],
-  "source_hash": "475164a405977ee8aeb75d650daeb4e0c0e761f09f3726876d253b6b36dc86ac"
+  "source_hash": "8c8dd6fcd757914c6303e439f47ceea2097dc5c05e2b6c0b4167ba4c655d1b3e"
 }
