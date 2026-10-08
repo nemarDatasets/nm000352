@@ -127,3 +127,7 @@ raw = read_raw_bids(BIDSPath(root=".", subject="bp", task="fingerflex", datatype
 Stanford Digital Repository druid zk881ps0522 (deposited 2019-02-05; CC BY-SA 4.0), task archives fingerflex.zip,
 gestures.zip, imagery_basic.zip, motor_basic.zip, speech_basic.zip, speech_lists.zip and the patient table
 kjm_ECoGLibrary_PatientTaskTable.pdf.
+
+## Atlas labels of the electrode positions (added 2026-10-08)
+
+Each `electrodes.tsv` that has coordinates now has two derived columns, `atlas_label_AAL3v1` and `atlas_label_DesikanKilliany`. They are an atlas lookup of the coordinates already in the file (Talairach coordinates converted to MNI with the inverse of the Lancaster et al. (2007) icbm_other2tal transform), made for NEMAR; they are not labels given by the authors, and the coordinates themselves are unchanged. Method and caveats: `electrodes.json`. 1127 of 1133 contacts received a label.

@@ -1,0 +1,10 @@
+{
+  "atlas_label_AAL3v1": {
+    "LongName": "AAL3v1 atlas label",
+    "Description": "Derived for NEMAR (2026-10-08), not given by the authors: label of the AAL3v1 atlas (Rolls et al. 2020, MNI152, 1 mm) at the contact position, nearest labelled voxel within 4 mm, else n/a. Talairach coordinates converted to MNI with the inverse of the Lancaster et al. (2007) icbm_other2tal transform. Coordinates in this file are unchanged."
+  },
+  "atlas_label_DesikanKilliany": {
+    "LongName": "Desikan-Killiany atlas label (FreeSurfer fsaverage aparc+aseg)",
+    "Description": "Derived for NEMAR (2026-10-08), not given by the authors: label of FreeSurfer fsaverage mri/aparc+aseg.mgz (Desikan-Killiany cortical parcels + aseg structures, MNI305 space; the MNI152/MNI305 difference is ignored) at the contact position; cortical/subcortical label within 4 mm if the voxel is unlabelled, white-matter labels kept as such, else n/a. Talairach coordinates converted to MNI with the inverse of the Lancaster et al. (2007) icbm_other2tal transform."
+  }
+}
