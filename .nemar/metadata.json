@@ -2,9 +2,10 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "IEEG004: A library of human electrocorticographic data and analyses (Kai J. Miller) - calibrated task subset",
-  "description": "A calibrated task subset of Kai J. Miller's library of human electrocorticographic (ECoG) data, comprising 111 recordings from 24 epilepsy patients with subdural electrode grids. Tasks include finger flexion, hand gestures, motor movement and imagery, verb generation, and noun reading. Data were recorded at 1 kHz on Synamps2 amplifiers and converted to BIDS (BrainVision format) with events and electrode positions.",
-  "methods_description": "Subdural ECoG was recorded at Harborview Hospital in Seattle with Synamps2 amplifiers at 1000 Hz, using a hardware band pass of 0.15-200 Hz and BCI2000 acquisition software. Source MATLAB task files were converted to BrainVision with MNE-BIDS and scaled to volts with the documented factor of 0.0298 µV per amplifier unit. No filtering, resampling, or re-referencing was applied. Stimulus codes were exported as events and as a STIMCODE channel.",
+  "description": "A calibrated task subset of Kai J. Miller's library of human electrocorticographic (ECoG) data, comprising 111 recordings from 24 epilepsy patients with subdural electrode grids. Tasks include finger flexion, hand gestures, motor movement and imagery, and verb generation and noun reading. Data are provided in BrainVision format with BIDS metadata, scaled to physical units using the source-documented amplifier calibration.",
+  "methods_description": "ECoG was recorded at Harborview Hospital in Seattle using Synamps2 amplifiers (Neuroscan) and BCI2000 software at 1000 Hz, with a built-in 0.15-200 Hz amplifier band pass. Platinum subdural grid and strip electrodes were used. Stimulus codes were retained as a STIMCODE channel and converted to BIDS events, and data were scaled to volts without filtering, resampling or re-referencing.",
   "license": "CC-BY-SA-4.0",
+  "dataset_type": "raw",
   "authors": {
     "Kai J. Miller": {
       "orcid": "0000-0002-6687-6422"
@@ -34,7 +35,7 @@
       "term": "finger flexion"
     },
     {
-      "term": "language"
+      "term": "speech and language tasks"
     }
   ],
   "related_identifiers": [
@@ -74,21 +75,6 @@
       "relation_type": "References"
     }
   ],
-  "resource_type_specific": "iEEG Dataset",
-  "modalities": [
-    "ieeg"
-  ],
-  "sizes": [
-    "6.51 GB (222 files)"
-  ],
-  "formats": [
-    ".eeg",
-    ".json",
-    ".tsv",
-    ".vhdr",
-    ".vmrk",
-    ".yml"
-  ],
   "funding_references": [
     {
       "funder_name": "Van Wagenen Foundation (financial support of the author)"
@@ -105,7 +91,62 @@
       "funder_name": "Van Wagenen Foundation"
     }
   ],
-  "dataset_type": "raw",
   "resource_type_general": "Dataset",
-  "source_hash": "adc7d584463ca84bde493829d03dd6ef5af5c58290ca85614f96358b02a1a8fc"
+  "resource_type_specific": "iEEG Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "sizes": [
+    "13.80 GB (607 files)"
+  ],
+  "formats": [
+    ".bib",
+    ".c",
+    ".class",
+    ".cpp",
+    ".css",
+    ".dia",
+    ".doc",
+    ".docx",
+    ".eeg",
+    ".example",
+    ".fieldtrip",
+    ".fig",
+    ".gif",
+    ".gii",
+    ".h",
+    ".html",
+    ".img",
+    ".java",
+    ".jpg",
+    ".json",
+    ".lut",
+    ".m",
+    ".man",
+    ".mat",
+    ".md",
+    ".mexa64",
+    ".mexmaci64",
+    ".mexw32",
+    ".mexw64",
+    ".nii",
+    ".p",
+    ".pdf",
+    ".png",
+    ".sfp",
+    ".sty",
+    ".tex",
+    ".tpl",
+    ".tsv",
+    ".txt",
+    ".u3d",
+    ".var",
+    ".vhdr",
+    ".vmrk",
+    ".wav",
+    ".win",
+    ".xml",
+    ".yml"
+  ],
+  "source_hash": "475164a405977ee8aeb75d650daeb4e0c0e761f09f3726876d253b6b36dc86ac"
 }
