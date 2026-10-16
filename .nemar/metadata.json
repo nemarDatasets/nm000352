@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
-  "title": "Miller-2019-library-10.1038/s41562-019-0678-3",
+  "title": "IEEG004: A library of human electrocorticographic data and analyses (Kai J. Miller) - calibrated task subset",
   "description": "A BIDS-formatted subset of Kai Miller's library of human electrocorticographic (ECoG) data, comprising 111 recordings from 24 epilepsy patients with subdural electrode grids. It covers six calibrated tasks: finger flexion, hand gestures, motor imagery, basic motor movement, and speech tasks (verb generation and noun reading). Recordings were made at 1 kHz with Synamps2 amplifiers and converted to BrainVision format with events and electrode positions.",
   "methods_description": "Subdural ECoG was recorded at Harborview Hospital in Seattle with Synamps2 amplifiers at 1000 Hz, using BCI2000 and a built-in 0.15-200 Hz band pass. Patients performed cued movement, imagery, gesture and speech tasks. MATLAB source files were converted to BrainVision with MNE-BIDS and scaled to physical units, with no filtering, resampling or re-referencing.",
   "license": "CC-BY-SA-4.0",
@@ -148,5 +148,5 @@
     ".xml",
     ".yml"
   ],
-  "source_hash": "29e16a61369a5555dba9f2aa8615e4673f55b6c04e3e080ed85f3f3c1b069d74"
+  "source_hash": "b2b284393c5c2b3d8649ee445c84076c979bea227428f28dad6183d6786082b8"
 }
