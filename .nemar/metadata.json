@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "IEEG004: A library of human electrocorticographic data and analyses (Kai J. Miller) - calibrated task subset",
-  "description": "A BIDS-formatted subset of Kai Miller's library of human electrocorticographic (ECoG) data, comprising 111 recordings from 24 epilepsy patients with subdural electrode grids. It covers six calibrated tasks: finger flexion, hand gestures, motor imagery, basic motor movement, and speech tasks (verb generation and noun reading). Recordings were made at 1 kHz with Synamps2 amplifiers and converted to BrainVision format with events and electrode positions.",
-  "methods_description": "Subdural ECoG was recorded at Harborview Hospital in Seattle with Synamps2 amplifiers at 1000 Hz, using BCI2000 and a built-in 0.15-200 Hz band pass. Patients performed cued movement, imagery, gesture and speech tasks. MATLAB source files were converted to BrainVision with MNE-BIDS and scaled to physical units, with no filtering, resampling or re-referencing.",
+  "description": "A BIDS-formatted subset of Kai J. Miller's library of human electrocorticographic (ECoG) data, covering six calibrated task archives: finger flexion, hand gestures, motor imagery, basic motor movement, and speech (verb generation and noun reading). It contains 111 recordings from 24 epilepsy patients with subdural electrode grids, recorded at 1 kHz at Harborview Hospital in Seattle. Signals are scaled to physical units and accompanied by events, channel, and electrode position files.",
+  "methods_description": "Subdural ECoG was recorded from patients undergoing clinical monitoring for medically refractory epilepsy, using Synamps2 amplifiers at 1000 Hz with a built-in 0.15-200 Hz band pass and BCI2000 software. Source MATLAB files were converted to BrainVision format with MNE-BIDS. Data were scaled once to volts, and no filtering, resampling, or re-referencing was applied.",
   "license": "CC-BY-SA-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -29,20 +29,32 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
+      "term": "motor movement"
+    },
+    {
       "term": "motor imagery"
     },
     {
       "term": "finger flexion"
     },
     {
-      "term": "speech and language tasks"
+      "term": "hand gestures"
+    },
+    {
+      "term": "verb generation"
+    },
+    {
+      "term": "noun reading"
+    },
+    {
+      "term": "speech and language"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1038/s41562-019-0678-3",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "https://github.com/nemarDatasets/nm000352",
